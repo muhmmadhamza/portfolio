@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useRouter } from "next/navigation";
+ 
 import { Command } from "cmdk";
 import {
   User,
@@ -22,10 +22,10 @@ import { useTheme } from "next-themes";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { siteConfig } from "@/data/site-config";
 import { cn } from "@/lib/utils";
-
+ 
 export function CommandMenu() {
   const [open, setOpen] = React.useState(false);
-  const router = useRouter();
+ 
   const { setTheme, resolvedTheme } = useTheme();
 
   React.useEffect(() => {
